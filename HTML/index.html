@@ -8,30 +8,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nicole Kelly</title>
         <link rel="stylesheet" href="../styles/style.css">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>        
     </head>
     <body>
         <header>
-            <h1>Nicole Kelly</h1>
+            <h1>My HTML Learning Journey</h1>
             <nav>
                 <!-- works like a <a href=".index.html">Home</a> -->
                 <a href="/">Home</a>
             </nav>
         </header>
         <main>
-            <h2>This is my page</h2>
-            <p>A list of fruit:</p>
-            <ul>
-                <li>Kiwi</li>
-                <li>Avocado</li>
-                <li>Banana</li>
-            </ul>
-            <p>The same list ranked by favorite:</p>
-            <ol>
-                <li>Avocado</li>
-                <li>Banana</li>
-                <li>Kiwi</li>
-            </ol>
-            <p>Avocados are <span style="color:green">green</span> and full of healthy fats.</p>
+            <article>
+                <h2>Learning Elements - div, span, p, pre, ul, li, ol, article</h2>
+                <p>A list of fruit:</p>
+                <ul>
+                    <li>Kiwi</li>
+                    <li>Avocado</li>
+                    <li>Banana</li>
+                </ul>
+                <p>The same list ranked by favorite:</p>
+                <ol>
+                    <li>Avocado</li>
+                    <li>Banana</li>
+                    <li>Kiwi</li>
+                </ol>
+                <p>Avocados are <span style="color:green">green</span> and full of healthy fats.</p>
             <p>Kiwis are also <span style="color:green">green</span> and delicously sweet.</p>
             <p>Bananas are <span style="color:yellow">yellow</span> and the perfect snack.</p>
             <p>
@@ -44,6 +50,35 @@
                 both      spaces and
                 line breaks
                 </pre>
+            </article>
+            <article>
+                <h2></h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2">First header</th>
+                        <th>Second header</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First cell - first row</td>
+                            <td>Second cell - first row</td>
+                            <td>Third cell - first row</td>
+                        </tr>
+                        <tr>
+                            <td>First cell - first row</td>
+                            <td>Second cell - first row</td>
+                            <td>Third cell - first row</td>
+                        </tr>
+                        <tr>
+                            <td>First cell - first row</td>
+                            <td>Second cell - first row</td>
+                            <td>Third cell - first row</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </article>
         </main>
        <footer>Copyright 2023 &copy;</footer>
         <script></script>
