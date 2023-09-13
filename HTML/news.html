@@ -1,0 +1,30 @@
+<head>
+<script>
+  let news = [
+    { id: 1, title: "News1", content: "bla" },
+    { id: 2, title: "News2", content: "ble" },
+    { id: 3, title: "News3", content: "blu" },
+  ];
+
+  function getNews() {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        resolve(news)
+      }, 2000)
+  })
+  };
+  function addCards() {
+    getNews().forEach((nnew) => {
+      const template = document
+        .getElementById("news - card - template")
+        .content.cloneNode(true);
+      template.querySelector(".card - title").innerText = card.title;
+      template.querySelector(".card - text").innerText = card.content;
+      document.querySelector("#news - list").appendChild(template);
+    });
+  }
+  if ("content" in document.createElement("template")) {
+    addCards();
+  }
+</script>
+</head>
